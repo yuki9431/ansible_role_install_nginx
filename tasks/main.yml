@@ -1,0 +1,17 @@
+---
+- name: epel repo installed
+  yum:
+    name: epel-release
+  become: yes
+
+- name: latest nginx version installed
+  yum:
+    name: "{{ packages }}"
+    state: latest
+    enablerepo: epel
+  become: yes
+  vars:
+    packages:
+      - nginx
+  notify:
+    - restart_nginx
