@@ -11,3 +11,6 @@ CentOS 7.6.1810
 
 ## 依存関係
 なし
+
+## Author
+[Dillen H. Tomida](https://twitter.com/t0mihir0)
